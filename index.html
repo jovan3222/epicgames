@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Free Games | Download A Free PC Game Every Week - Epic Games Store
+    </title>
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="header-nav">
+        <img class="logo" src="emLogo.png" alt="Epic Games Logo" />
+
+        <ul id="rightnav" class="rightnav">
+          <li><a>STORE</a></li>
+          <li><a>FAQ</a></li>
+          <li><a>HELP</a></li>
+          <li><a>UNREAL ENGINE</a></li>
+        </ul>
+        <div class="user" id="user" href="">
+          <a><img src="user-icon.png" />SIGN IN</a>
+        </div>
+        <div class="download-btn" id="download-btn" href="">
+          <a>DOWNLOAD</a>
+        </div>
+        <div class="language-icon" id="language-icon" href="">
+          <img src="planet-img.png" />
+        </div>
+
+        <div id="wrapper">
+          <div class="wrapper" id="btn" onclick="my8Function()">
+            <a href="#" class="nav">
+              <div class="one" id="one"></div>
+              <div class="two" id="two"></div>
+              <div class="three" id="three"></div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sticky-div">
+        <button class="discover-btn" id="discover-btn" onclick="myFunction()">
+          <a id="btn-text">Discover</a>
+          <i class="fa-solid fa-angle-down" id="arrow-down"></i>
+        </button>
+        <ul class="discover-ul" id="discover-ul">
+          <li id="ej">Discover</li>
+          <li>Browse</li>
+          <li>News</li>
+        </ul>
+        <div
+          class="sticky-overlay"
+          id="sticky-overlay"
+          onclick="my2Fucntion()"
+        ></div>
+        <img
+          src="lupa1.png"
+          class="search-icon"
+          id="serach-icon"
+          onclick="my3Fucntion()"
+        />
+        <div class="search-div" id="search-div">
+          <input type="text" placeholder="Search store" />
+          <img
+            src="x-icon.png"
+            class="x-icon"
+            id="x-icon"
+            onclick="my4Fucntion()"
+          />
+        </div>
+      </div>
+
+      <section class="section1">
+        <p class="playmore">PLAY MORE</p>
+        <h2 class="h2">Free Games</h2>
+        <p class="h2-description">
+          Epic Games Store gives you a free game every week. Come back often for
+          the exclusive offers. Download a free game to play or join a
+          free-to-play game community today.
+        </p>
+        <div class="section1-games">
+          <div class="section1-1game" id="section1-1game">
+            <img src="naraka.jpg" />
+            <p class="section1-1game-title">
+              NARAKA: BLADEPOINT - Free Weekend
+            </p>
+            <p class="section1-1game-description">
+              Danger comes in all forms. Claim your victory in NARAKA:
+              BLADEPOINT's new map Holoroth in the free weekend event!
+            </p>
+            <a class="section1-1game-link">Learn More</a>
+          </div>
+          <div class="section1-2game" id="section1-2game">
+            <img src="unrailed-game.jpg" />
+            <p class="section1-2game-title">
+              NARAKA: BLADEPOINT - Free Weekend
+            </p>
+            <p class="section1-2game-description">
+              Danger comes in all forms. Claim your victory in NARAKA:
+              BLADEPOINT's new map Holoroth in the free weekend event!
+            </p>
+            <a class="section1-2game-link">Free</a>
+          </div>
+          <img
+            src="tacka.png"
+            class="tacka1"
+            id="tacka1"
+            onclick="my6Function()"
+          />
+          <img
+            src="tacka.png"
+            class="tacka2"
+            id="tacka2"
+            onclick="my5Function()"
+          />
+        </div>
+      </section>
+
+      <section class="section2">
+        <div class="section2-games">
+          <div class="section2-1game" id="section2-1game">
+            <img src="doom.jpg" />
+            <div><a>FREE NOW</a></div>
+            <p class="section2-1game-title">DOOM 64</p>
+            <p class="section2-1game-description">
+              Free Now - Aug 25 at 05:00 PM
+            </p>
+          </div>
+          <div class="section2-2game" id="section2-2game">
+            <img src="Rumbleverse.jpg" />
+            <div><a>FREE NOW</a></div>
+            <p class="section2-2game-title">
+              Rumbleverse™ - Boom Boxer Content Pack
+            </p>
+            <p class="section2-2game-description">
+              Free Now - Aug 25 at 05:00 PM
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      var bolean = false;
+      var discoverUl = document.getElementById("discover-ul");
+      var arrowDown = document.getElementById("arrow-down");
+      var stickyOverlay = document.getElementById("sticky-overlay");
+      var searchDiv = document.getElementById("search-div");
+
+      function myFunction() {
+        if (bolean === false) {
+          discoverUl.style.display = "block";
+          arrowDown.style.transform = "rotate(180deg)";
+          stickyOverlay.style.display = "block";
+          bolean = true;
+        } else {
+          discoverUl.style.display = "none";
+          arrowDown.style.transform = "rotate(0deg)";
+          stickyOverlay.style.display = "none";
+          bolean = false;
+        }
+      }
+
+      function my2Fucntion() {
+        discoverUl.style.display = "none";
+        arrowDown.style.transform = "rotate(0deg)";
+        stickyOverlay.style.display = "none";
+        searchDiv.style.display = "none";
+        rightnav.style.left = "100%";
+        downloadBtn.style.left = "100%";
+        user.style.left = "100%";
+        languageIcon.style.left = "100%";
+        one.style.display = "block";
+        two.style.transform = "rotate(0deg)";
+        two.style.marginTop = "0px";
+        three.style.transform = "rotate(0deg)";
+        three.style.marginTop = "0px";
+        wrapper.style.backgroundColor = "#0078f2";
+        stickyOverlay.style.display = "none";
+        bolean = false;
+        bolean2 = false;
+      }
+
+      function my3Fucntion() {
+        searchDiv.style.display = "flex";
+        stickyOverlay.style.display = "block";
+      }
+
+      function my4Fucntion() {
+        searchDiv.style.display = "none";
+        stickyOverlay.style.display = "none";
+      }
+
+      var section11Game = document.getElementById("section1-1game");
+      var section12Game = document.getElementById("section1-2game");
+      var tacka1 = document.getElementById("tacka1");
+      var tacka2 = document.getElementById("tacka2");
+
+      function my5Function() {
+        section11Game.style.position = "relative";
+        section11Game.style.left = "-50%";
+        section12Game.style.position = "relative";
+        section12Game.style.left = "-51%";
+        tacka1.style.opacity = "0.3";
+        tacka2.style.opacity = "1";
+      }
+
+      function my6Function() {
+        section11Game.style.position = "relative";
+        section11Game.style.left = "0%";
+        section12Game.style.position = "relative";
+        section12Game.style.left = "0%";
+        tacka1.style.opacity = "1";
+        tacka2.style.opacity = "0.3";
+      }
+
+      var one = document.getElementById("one");
+      var two = document.getElementById("two");
+      var three = document.getElementById("three");
+      var wrapper = document.getElementById("btn");
+      var bolean2 = false;
+      var rightnav = document.getElementById("rightnav");
+      var downloadBtn = document.getElementById("download-btn");
+      var user = document.getElementById("user");
+      var languageIcon = document.getElementById("language-icon");
+
+      function my8Function() {
+        if (bolean2 === false) {
+          rightnav.style.left = "10%";
+          downloadBtn.style.left = "10%";
+          user.style.left = "10%";
+          languageIcon.style.left = "68%";
+          one.style.display = "none";
+          two.style.transform = "rotate(45deg)";
+          two.style.marginTop = "23px";
+          three.style.transform = "rotate(135deg)";
+          three.style.marginTop = "-7px";
+          wrapper.style.backgroundColor = "#252525";
+          stickyOverlay.style.display = "block";
+          bolean2 = true;
+        } else {
+          rightnav.style.left = "100%";
+          downloadBtn.style.left = "100%";
+          user.style.left = "100%";
+          languageIcon.style.left = "100%";
+          one.style.display = "block";
+          two.style.transform = "rotate(0deg)";
+          two.style.marginTop = "0px";
+          three.style.transform = "rotate(0deg)";
+          three.style.marginTop = "0px";
+          wrapper.style.backgroundColor = "#0078f2";
+          stickyOverlay.style.display = "none";
+          bolean2 = false;
+        }
+      }
+    </script>
+  </body>
+</html>
